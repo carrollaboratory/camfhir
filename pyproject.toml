@@ -1,0 +1,25 @@
+[project]
+name = "camfhir"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.8.0 ",
+    "dbt-postgres>=1.8.0 ",
+    "httpx>=0.28.1",
+    "psycopg[binary]>=3.3.4",
+    "spit-fhir @ git+https://github.com/carrollaboratory/spit-fhir",
+    "sqlfluff>=4.2.2",
+    "sqlfluff-templater-dbt>=4.2.2",
+    "common_access_model @ https://github.com/include-dcc/common-access-model/releases/download/v0.2.2/common_access_model-0.2.2-py3-none-any.whl",
+    "glom>=25.12.0",
+]
+
+[dependency-groups]
+dev = [
+    "rich>=15.0.0",
+]
+
+[tool.setuptools]
+packages = ["scripts"]
