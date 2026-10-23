@@ -240,4 +240,10 @@ state/
 # Local connection/credentials profile (if kept in-project rather than ~/.dbt/)
 profiles.yml
 
+# personal local project based history
 .bash_history_local
+
+# cam-factory output used to populate relevant dbt test fixtures and data tables
+./testdata
+
+/scratch

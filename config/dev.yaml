@@ -1,0 +1,10 @@
+# Each version of cam-factory output is tied to a corresponding version of the common access model. Updates to one will require updates
+# across the board.
+
+test-profile:
+  debug:
+    description: Minimal fixtures for debugging transforms
+    url: https://github.com/carrollaboratory/cam-factory/releases/download/data-v0.2.2/cam-testdata-small-0.2.2.tar.gz
+  integration:
+    description: More realistic sized data for testing extraction and FHIR validation
+    url: https://github.com/carrollaboratory/cam-factory/releases/download/data-v0.2.2/cam-testdata-portal-0.2.2.tar.gz
